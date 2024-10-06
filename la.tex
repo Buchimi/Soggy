@@ -1,0 +1,95 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+\pagestyle{empty}
+
+% Custom commands for section formatting
+\newcommand{\namesection}[3]{
+  \begin{center}
+    \huge\textbf{#1}\\[4pt]
+    \normalsize#2 | #3
+  \end{center}
+}
+
+\titleformat{\section}
+  {\Large\bfseries\uppercase}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+\newcommand{\job}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}\\
+}
+
+\newcommand{\project}[2]{
+  \textbf{#1} | #2
+}
+
+\begin{document}
+
+\namesection{Michael Ugochukwu}
+  {(682) 552-4468 | michael.buuchi@gmail.com}
+  {\href{https://linkedin.com/in/michael-ugochukwu}{linkedin.com/in/michael-ugochukwu} | \href{https://github.com/Buchimi}{github.com/Buchimi}}
+
+\section{Education}
+\textbf{University of Texas at Dallas} \hfill Dallas, TX\\
+Bachelor of Science in Computer Science \hfill Aug. 2021 – Dec 2024\\
+GPA: 3.7
+
+\section{Experience}
+\job{Google}{Mountain View, CA}{Software Engineering Intern (Flutter, Dart)}{May 2024 – August 2024}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Drafted a design doc, gathered approvals and created a new feature on Google's family link app.
+  \item Utilized internal tooling to perform screen diffing tests in Flutter, ensuring new features work as intended.
+  \item Implemented and tested new foreign function interface (FFI) package templates in languages like Go, Rust and C++ for the Flutter framework (open source).
+  \item Improved Java annotations on the backend, eliminating the possibility of unexpected parameter value bugs to unset optional parameters (Dependency injection bugs)
+  \item Leveraged Flutter's internal API to implement responsive animated widgets, improving in app user experience.
+  \item Improved text to speech labeling on Flutter widgets, improving audio based accessibility features.
+\end{itemize}
+
+\job{Rondevu}{Dallas, TX}{Software Engineer}{Nov 2023 – Mar 2024}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Optimized server response times by implementing clever caching techniques, leading to latency drops of 78\%.
+  \item Reduced database query time from 3300 ms to 13 ms by smart index design and time dependent document processing using Redis as a message queue.
+  \item Designed admin control page using NextJS and Tailwind to let admin users manually perform operations like sending notifications to users or verifying photos.
+  \item Reduced server storage costs by on-server file compression, leading to a reduction of storage use by 20\%.
+  \item Mentored engineering peers on front-end, back-end development and mobile development with React-Native.
+\end{itemize}
+
+\job{Rivian Automotive}{Palo Alto, CA}{Software Engineering Intern}{May 2023 – Aug 2023}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Developed a banner feature utilizing React.JS and Material UI to notify users of internal tools/software about software status, including service downtime, platform updates, and service availability.
+  \item Built microservices using Java and Spring to power the banner feature and handle CRUD operations on banner objects against a DynamoDB instance.
+  \item Utilized JUnit and Mockito to write comprehensive unit tests, guaranteeing the reliability of the server and 100\% code coverage.
+  \item Leveraged the DGS Graphql framework to build a Graphql monolith to support the implementation of efficient queries and mutations of database objects in Java.
+  \item Devised Python scripts to resolve local repository errors, ensuring seamless codebase execution and testing.
+\end{itemize}
+
+\section{Projects}
+\project{Personal Website}{React, NextJS, Typescript, NodeJS} \hfill Dec 2022 – Present
+\begin{itemize}[leftmargin=*,nosep]
+  \item Designed and developed a personal project showcase website using ReactJS and NextJS.
+  \item Applied responsive web design that allowed the website to adapt to different screen sizes and devices
+  \item Leveraged ReactJS to create engaging animations that enhanced user experience and resulted in an increase in user engagement.
+\end{itemize}
+
+\project{Interview Prep Website}{React, Firebase, Javascript, NodeJS} \hfill October 2022
+\begin{itemize}[leftmargin=*,nosep]
+  \item Created a web platform using NodeJS and ReactJS that prepares students for virtual interviews.
+  \item Leveraged both Firebase Firestore database and storage services to store student interview videos.
+  \item Designed an intuitive rating and feedback system, allowing users to provide constructive critiques and ratings for uploaded interview videos.
+\end{itemize}
+
+\section{Technical Skills}
+\textbf{Languages:} Java, Python, C/C++, Javascript/Typescript, Dart, Rust\\
+\textbf{Frameworks:} React, Node.js, Spring, JUnit, DGS, Material-UI, Flutter, NextJS, Tailwind, Expo/React-Native\\
+\textbf{Developer Tools:} AWS, GraphQL, Git, Linux, Terraform, Firebase
+
+\end{document}

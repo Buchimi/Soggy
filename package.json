@@ -1,0 +1,18 @@
+{
+  "name": "resumebuilder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "latex.js": "^0.12.6",
+    "node-latex": "^3.1.0",
+    "pdfkit": "^0.15.0",
+    "puppeteer": "^23.5.0"
+  },
+  "type": "module"
+}
